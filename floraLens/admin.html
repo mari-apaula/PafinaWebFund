@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador - FloraLens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-body">
+    <div class="admin-container">
+        <div class="admin-box">
+            <img src="assets/logo.png" alt="FloraLens Logo" class="logo"> <!-- Logo incluido -->
+            <h2>Panel de Administrador</h2>
+            <p class="welcome-text">Bienvenido, administrador. Aquí puedes gestionar los usuarios y plantas.</p>
+
+            <!-- Lista de Plantas Registradas -->
+            <div>
+                <h2>Lista de Plantas Registradas</h2>
+                <table id="plants-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre Común</th>
+                            <th>Especie</th>
+                            <th>Estado de Conservación</th>
+                            <th>Registrado por</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Las plantas se agregarán dinámicamente con JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Lista de Usuarios Registrados -->
+            <div>
+                <h2>Lista de Usuarios Registrados</h2>
+                <table id="users-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Correo Electrónico</th>
+                            <th>Nombre</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Los usuarios se agregarán dinámicamente con JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div>
+                <button onclick="window.location.href='login.html'">Cerrar sesión</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario - FloraLens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="user-body">
+    <div class="user-container">
+        <div class="user-box">
+            <img src="assets/logo.png" alt="FloraLens Logo" class="logo"> <!-- Logo incluido -->
+            <h2>Panel de Usuario</h2>
+            <p class="welcome-text">Bienvenido, usuario. Aquí puedes ver las plantas y sus detalles.</p>
+
+            <!-- Lista de Plantas -->
+            <div>
+                <h2>Plantas Disponibles</h2>
+                <table id="user-plants-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre Común</th>
+                            <th>Especie</th>
+                            <th>Estado de Conservación</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Las plantas se agregarán dinámicamente con JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div>
+                <button onclick="window.location.href='login.html'">Cerrar sesión</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="user.js"></script>
+</body>
+</html>
